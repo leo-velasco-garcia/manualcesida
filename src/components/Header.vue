@@ -1,10 +1,12 @@
 <script setup>
     let num = Math.floor(Math.random() * 38) + 1;
-    const logoheader = new URL(`../assets/header/LogoCesida-${num}.svg`, import.meta.url).href
+    const logoheader = new URL(`../assets/header/LogoCesida-${num}.svg`, import.meta.url).href;
+    import Boton from './Boton.vue';
 </script>
 <template>
     <header class="header">
         <img :src="logoheader" alt="Logotipo de Cesida">
+        <Boton text="menu"/>
     </header>
 </template>
 <style scoped>
